@@ -1,0 +1,72 @@
+*{
+	margin: 0; /* el margen de la pagina es de cero*/
+	padding: 0; /* el relleno de la pagina es de cero*/
+	box-sizing: border-box; /* para el control de las cajas que vamos a estar utilizando*/
+}
+
+body {  /* para modificar el cuerpo de la pagina */
+	width: 100%; /* un ancho del 100 por ciento*/
+	height: 100vh; /* un alto del 100 que va a ocupar la pantalla*/
+	display: flex; /* para la caja para que sea flexible*/
+	justify-content: center; /* para el contenido de la etiqueta body este centrado de manera horizontal*/
+	align-items: center; /* para que este centrado de manera vertical en medio de la pagina*/
+	font-family: sans-serif; /* para el tipo de letra*/
+}
+
+.container { /* la clase container del html */
+	width: 100%; /* un ancho del 100 por ciento */
+	display: flex; /* que sea una caja flexible */
+	max-width: 1100px; /* un maximo de ancho de 1100 pixeles*/
+}
+
+.card { /* la clase card del html*/
+	width: 100%; /* un ancho del 100 por ciento */
+	margin: 20px; /* un margen de 20 pixeles */
+	border-radius: 6px; /* para las tarjetas tengan un pequeño redondeado en cada esquina*/
+	overflow: hidden; /* para que todo elemento que este fuera del contenedor de la tarjeta se oculte y no aparezcan afuera */
+	background: #fff; /* un fonde de color blanco */
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /* sombras para las tarjetas de un color gris claro*/
+	cursor: default; /* para que tenga el cursor normal cuando pasemos el cursor*/
+	transition: all 400ms ease; /* para que el efecto sea suave con la transicion y dura 400 milisegundos con el efecto ease*/
+}
+
+.card:hover { /* para el efecto hover en la clase card*/
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4); /* sombras para las tarjetas de un color gris claro*/
+	transform: translateY(-3%); /* para la transformacion de cada tarjeta se va a trasladar de manera vertical a -3 por ciento*/
+}
+
+.card img { /* la clase card del html y la etiqueta de la imagen */
+	width: 100%; /* un ancho del cien por ciento */
+	height: 210px; /* un alto de 210 pixeles */
+}
+
+.card .contenido { /* la clase card del html y la clase contenido del html */
+	padding: 15px; /* el relleno sera de 15 pixeles */
+	text-align: center; /* para que el texto este centrado */
+}
+
+.card .contenido p { /* la clase card del html y la clase contenido del html con la etiqueta p */
+	line-height: 1.5; /* para que las lineas del parrafo tengan espacion cada una */
+	color: #6a6a6a; /* color gris */
+}
+
+.card .contenido h3 { /* la clase card del html y la clase contenido del html con la etiqueta h3 */
+	font-weight: 400; /* para que reduzca la negrita  */
+	margin-bottom: 15px; /* para que empuje nuestro parrafo hacia abajo */
+}
+
+.card .contenido a { /* la clase card del html y la clase contenido del html con la etiqueta a */
+	text-decoration: none; /* para quitar la linea o el subrayado */
+	display: inline-block;
+	padding: 10px; /* el relleno sera de 10 pixeles */
+	margin-top: 10px; /* para que se empuje hacia abajo */
+	color: #2fb4cc; /* color celeste */
+	border: 1px solid #2fb4cc; /* un borde de 1 pixel y solido del color celeste */
+	border-radius: 4px; /* para el redondeado de 4 pixeles */
+	transition: all 400ms ease; /* para que el efecto sea suave con la transicion y dura 400 milisegundos con el efecto ease*/
+}
+
+.card .contenido a:hover { /* la clase card del html y la clase contenido del html con el efecto hover del mouse a la etiqueta a */
+	background: #2fb4cc; /* fonde celeste */
+	color: #fff; /* color blanco */
+} 
